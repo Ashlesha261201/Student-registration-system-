@@ -11,38 +11,53 @@
     <header>
         <nav class="nav-bar">
             <h1 class="nav-heading">Student Enrollment System</h1>
-            <!-- <p>Register, edit and Manage Student Details</p> -->
+            <p class="nav-p">Effortless registration. Instant access. Smart management.</p>
         </nav>
     </header>
+    
+<main>
+    <div class="container">
 
+    <!--Left: Form-->
+    <div class="main-container">
+    <section class="form-wrap">
+        <form class="Studentform">
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required >
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" student-id="student-id" placeholder="Enter your ID" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" email="email" placeholder="Enter your Email" required>
+            <label for="contact"> Contact Number:</label>
+            <input type="number" id="contact" contact="contact" placeholder="Enter your Mobile Number" required>
+            <button type="submit">Add Student Details</button>
+        </form>
+    </section>
+    </div>
+    
+    <!--Divider-->
+    <div class="divider"></div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!--Right: Resigtered Students-->
+    <section class="display-section">
+        <h2>Registered Students</h2>
+        <div class="table-container">
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student ID</th>
+                        <th>Student Email</th>
+                        <th>Student Contact Details</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </section>
+    </div>
+</main>
 
 
     <script src="app.js"></script>
